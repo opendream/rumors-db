@@ -10,8 +10,8 @@ export default {
       },
       analyzer: {
         cjk_url_email: {
-          tokenizer: 'uax_url_email',
-          filter: ['cjk_width', 'lowercase', 'cjk_bigram', 'english_stop'],
+          tokenizer: 'thai',
+          filter: ['cjk_width', 'lowercase', 'cjk_bigram', 'english_stop', "stop", "kstem"],
         },
       },
     },
