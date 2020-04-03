@@ -1,5 +1,6 @@
 export default {
   properties: {
+    title: { type: 'text', analyzer: 'cjk_url_email' },
     text: { type: 'text', analyzer: 'cjk_url_email' },
     createdAt: { type: 'date' },
     updatedAt: { type: 'date' },
@@ -60,6 +61,7 @@ export default {
     lastRequestedAt: { type: 'date' },
 
     tags: { type: 'keyword' },
+    categories: { type: 'keyword' },
 
     // Links in article text
     hyperlinks: {
