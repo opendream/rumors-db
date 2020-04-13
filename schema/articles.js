@@ -62,13 +62,7 @@ export default {
 
     tags: { type: 'keyword' },
     categories: {
-      type: "text",
-      fields: {
-        keyword: {
-          type: "keyword",
-          ignore_above: 256
-        }
-      }
+      type: "[keyword]",
     },
 
     // Links in article text
