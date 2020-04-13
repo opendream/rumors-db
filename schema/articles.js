@@ -61,9 +61,7 @@ export default {
     lastRequestedAt: { type: 'date' },
 
     tags: { type: 'keyword' },
-    categories: {
-      type: "[keyword]",
-    },
+    categories: { type: 'keyword' },
 
     // Links in article text
     hyperlinks: {
