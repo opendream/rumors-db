@@ -61,7 +61,15 @@ export default {
     lastRequestedAt: { type: 'date' },
 
     tags: { type: 'keyword' },
-    categories: { type: 'keyword' },
+    categories: {
+      type: "text",
+      fields: {
+        keyword: {
+          type: "keyword",
+          ignore_above: 256
+        }
+      }
+    },
 
     // Links in article text
     hyperlinks: {
@@ -73,5 +81,7 @@ export default {
         summary: { type: 'text', analyzer: 'cjk' }, // Extracted summary text
       },
     },
+
+    status: { type: 'keyword' }, // NORMAL, DELETED
   },
 };
