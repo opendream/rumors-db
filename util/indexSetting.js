@@ -9,9 +9,7 @@ export default {
         },
         synonym : {
           type : 'synonym',
-          synonyms : [
-            'covid, โควิด, โควิท, โคโรนา, โคโรน่า, corona',
-          ]
+          synonyms_path : 'synonyms.txt'
         }
       },
       analyzer: {

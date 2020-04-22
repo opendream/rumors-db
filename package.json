@@ -1,6 +1,6 @@
 {
   "name": "rumors-db",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Cofacts Database schema & scripts",
   "main": "index.js",
   "license": "MIT",
